@@ -1,0 +1,28 @@
+{
+  "name": "module-a",
+  "version": "1.0.0",
+  "description": "Example module exposing React components",
+  "main": "dist/index.js",
+  "author": "Michele Ursino",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "register": "yarn link",
+    "build": "rimraf dist/* && webpack --hide-modules"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^15.5.0",
+    "rimraf": "^2.6.1",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "tslint": "^5.1.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}

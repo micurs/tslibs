@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": ".",
+    "removeComments": false,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "jsx": "react",
+    "outDir": "./dist",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts", "src/**/*.tsx"
+  ]
+}

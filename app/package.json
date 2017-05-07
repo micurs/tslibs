@@ -1,0 +1,31 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Example frontend app using React and a React custom module",
+  "main": "dist/main.js",
+  "author": "Michele Ursino",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn link \"module-a\" && webpack --hide-modules",
+    "start": "http-server . -i -p 9090 -d false -o http://localhost:9090/index.html"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^15.5.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "http-server": "^0.9.0",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "tslint": "^5.1.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "module-a": "file:../moduleA",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
